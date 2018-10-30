@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Curb Your Enthusiasm theme</title>
+</head>
+<body>
+<script type="text/javascript">
+	const player = () => 
+		{
+			setTimeout(() => {
+				try {
+					document.getElementById('audio').play();
+				}
+				catch (e) {
+					alert('Click ok!');
+					player();
+				}
+			}, 1000);
+		};
+	player();
+</script>
+<audio controls id='audio'>
+	<source src="curb-your-enthusiasm.mp3" type="audio/mp3">
+</audio>
+</body>
+
+</html>
