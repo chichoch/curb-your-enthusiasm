@@ -1,3 +1,8 @@
+
+@keyframes zoom {
+    from { background-size: 100%; }
+    to { background-size: 500%; }
+}
 body {
     background-image: url("http://i.imgur.com/bGj5yr6.gif");
     background-size: cover;
@@ -14,9 +19,4 @@ body {
 
 audio {
     margin-bottom: 24px;
-}
-
-@keyframes zoom {
-    from { background-size: 100%; }
-    to { background-size: 500%; }
 }

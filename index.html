@@ -15,24 +15,10 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<script type="text/javascript">
-	const player = () => 
-		{
-			setTimeout(() => {
-				try {
-					document.getElementById('audio').play();
-				}
-				catch (e) {
-					alert('Click ok!');
-					player();
-				}
-			}, 1000);
-		};
-	player();
-</script>
-<audio controls id='audio'>
-	<source src="curb-your-enthusiasm.mp3" type="audio/mp3">
-</audio>
+    <audio controls id="audio">
+	    <source src="curb-your-enthusiasm.mp3" type="audio/mp3">
+    </audio>
 </body>
+    <script type="text/javascript" src="script.js"></script>
 
 </html>
