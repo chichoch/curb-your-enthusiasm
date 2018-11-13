@@ -6,10 +6,17 @@ body {
     justify-content: center;
     height: 100vh;
     align-items: flex-end;
-    
+    animation: zoom forwards 2s;;
+    animation-delay: 3s;
+    background-position-x: center;
+    background-position-y: 20%;
 }
 
 audio {
     margin-bottom: 24px;
 }
 
+@keyframes zoom {
+    from { background-size: 100%; }
+    to { background-size: 500%; }
+}
